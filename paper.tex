@@ -1,0 +1,136 @@
+\documentclass{ctexart}
+\bibliographystyle{alpha}
+
+%% 用来实现交叉引用的宏包
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, pdfstartview=FitV, linkcolor=BrickRed,citecolor=BrickRed, urlcolor=BrickRed}
+
+% algorithm2e生成伪代码的包：ruled(三线表样式)、linesnumbered(显示行号)
+\usepackage[ruled,linesnumbered]{algorithm2e}
+
+% 本段代码使得各节标题左对齐，删掉可以居中。
+\ctexset{
+section = {
+format = \raggedright\Large\bfseries,
+}
+}
+
+\title{用算法求 Taffy 的真实身份}
+\author{孙笑川\thanks{Email: foo@doma.in} \and 孙哭川\thanks{Email: bar@doma.in}}
+\date{\today}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%% 文章开始
+\begin{document}
+  
+  \maketitle
+  % 下面的 \cite{coffee} 是引用参考文献中名为 “coffee” 的那一篇
+  \begin{abstract}
+    {在这篇文章里，我们详细探讨了 taffy 的真面目，通过传递闭包算法，我们在前人的基础~\cite{coffee}上，终于找到了真相！}
+    \par\textbf{关键词：} Taffy，算法。  
+  \end{abstract}
+
+
+  \tableofcontents
+
+%% 引言
+  \section{引言}
+    据悉，``taffy" 是 ``coffee" 的谐音。  % 别忘了 `` 是前引号
+
+
+%% 算法原理
+  \section{算法原理}\label{code}  % 此处 \label{name} 是为了以后引用本节
+    首先，让我们来观察如下代码：
+
+    % 在 verbatim 之间随意书写你的代码就可以了。
+    \begin{verbatim}
+      #include <stdio.h>
+      int main (void) {
+        return main() \LaTeX
+      }
+    \end{verbatim}
+    % \verb|...| 会将内部内容以无衬线字体显示，也就是编程字体。
+    这段代码的精髓就在于，它完美地揭示了 \verb|main| 函数的真相——\verb|main| 函数被定义为返回一个 \verb|int| 型，那么，它要返回的 \verb|int| 是什么呢？答案就是，它要返回的那个数，就是它要返回的那个数！实在是太巧妙了！
+
+
+%% 证明
+  \section{证明}
+    因为 
+
+    \[
+      \|g(x,v)\|_{\mathcal{G}^{\lambda,s}_n(\T^d\times\R^d)}:=\sum_{|a|\leq n}     \|D^a_\xi\widehat{g}(k,\xi)e^{\lambda\langle k,\xi\rangle^s}\|_{\mathcal     {G}^{\lambda,s}(\T^d\times\R^d)}.
+    \]
+   
+    所以 taffy 就是 taffy！
+    \subsection{公式分析}  % 这是子节
+      这个公式是 Taffy 托梦给我的，所以不会错！
+
+
+%% 时间复杂度
+  \section{时间复杂度}
+    在本节，我们将证明给出的算法（第 \ref{code} 节）时间复杂度为 \( O(\frac{1}{n}) \)。  % 这里的 \ref 就是引用了代码中所定义的 code 节
+    但是在证明之前，我们必须指出:
+
+
+%% 伪代码分析
+  \section{伪代码分析}
+    如下伪代码揭示了怎么用 coffee 寻找 Taffy：
+
+  \begin{algorithm}[H]
+  \SetAlgoLined
+  
+  \caption{Search Taffy}  % 算法名称
+
+  \KwIn{ Coffee's name }  % 输入数据
+  \KwOut{ Taffy's location }  % 输出数据
+  \tcp{temp: the temperature function}  % \tcp 是伪代码内部的注释
+  
+  % \while{条件}{循环体}
+  \While{coffee is not cold}{
+  print (temp (coffee))\;  % \; 使行末添加分号，并自动换行
+    
+    % \eIf{条件}{肯定语句}{否定语句}
+    \eIf{coffe is hot}{
+	change a cup of coffee\;
+      }{
+	put coffee on the table\;
+      }
+
+    % \If{条件}{肯定语句}
+    \If{Taffy is near table}{
+      print (``Taffy is around you!")\;
+      }
+    }
+
+  % \For{条件}{循环语句}
+  \For{all coffee}{
+    drink\;
+  }
+
+  return Nothing\;  % 返回值
+  \end{algorithm}    
+
+  我们的伪代码效率高达 1.00\%!
+
+
+%% 附录
+  \appendix
+  \section{附录}
+    这里是附录，这里没有 taffy。
+
+
+
+
+%% 参考文献
+  \begin{thebibliography}{10}
+    \bibitem{coffee}  % 这是你引用文献时的简称
+	    X. Sun: \emph{What is coffee}, Chouxiang Volume~9, Issue 2 (2024).
+  \end{thebibliography}
+
+\end{document}
