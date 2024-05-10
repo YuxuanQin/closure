@@ -24,10 +24,10 @@ xelatex paper.tex
 - 自动清理冗余的辅助文件，例如 `.aux`、`.log`。
 - **忠实地完成一个程序应该做的所有事情**：使用 `xelatex` 或者 `latex` 编译带目录的文件时，需要你**手动**多次编译，这是为何？作为一个只想要结果 —— pdf —— 的用户而言，实在是太烦人了。
 
-一切只需要遵从 [How to: Install Tectonic](https://tectonic-typesetting.github.io/book/latest/installation/) 的指示，执行那段 “Copy-paste terminal command”，再放进你的路径中，最后：
+一切只需要遵从 [How to: Install Tectonic](https://tectonic-typesetting.github.io/book/latest/installation/) 的指示，执行那段 “Copy-paste terminal command”，再把 `tectonic` 放进你的路径中，最后：
 
 ```
 tectonic file.tex
 ```
 
-一切就完成了，谁 tm 关心那些 `.aux`、`.out` :laughing:？
+一切就完成了:laughing:，谁 tm 关心那些 `.aux`、`.out`？
