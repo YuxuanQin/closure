@@ -1,6 +1,10 @@
 \documentclass{ctexart}
 \bibliographystyle{alpha}
 
+
+%% \mathbb 的依赖
+\usepackage{amssymb}
+
 %% 用来实现交叉引用的宏包
 \usepackage[dvipsnames]{xcolor}
 \usepackage{hyperref}
@@ -52,7 +56,7 @@ format = \raggedright\Large\bfseries,
     \begin{verbatim}
       #include <stdio.h>
       int main (void) {
-        return main() \LaTeX
+        return main()
       }
     \end{verbatim}
     % \verb|...| 会将内部内容以无衬线字体显示，也就是编程字体。
@@ -64,7 +68,7 @@ format = \raggedright\Large\bfseries,
     因为 
 
     \[
-      \|g(x,v)\|_{\mathcal{G}^{\lambda,s}_n(\T^d\times\R^d)}:=\sum_{|a|\leq n}     \|D^a_\xi\widehat{g}(k,\xi)e^{\lambda\langle k,\xi\rangle^s}\|_{\mathcal     {G}^{\lambda,s}(\T^d\times\R^d)}.
+      \sum_{k \in \mathbb{N}} \frac{1}{k^2} = \frac{\pi ^2}{6}
     \]
    
     所以 taffy 就是 taffy！
